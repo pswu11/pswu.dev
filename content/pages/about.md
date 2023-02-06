@@ -8,9 +8,9 @@ Hey, this is Pei. My hometown is Taipei. Since 2015, Germany became my second ho
 
 I've been working with developer-focused open-source software (e.g. databases, ML framework, etc.) for some years. 
 
-I'm a Financial Analyst turned into Product Manager. In my earlier career, I realized my passion lies in making impacts through building products that users and customers love. Having said that, I still enjoy working with numbers. 
+I'm a Financial Analyst turned into Product Manager. In my earlier career, I realized my passion lies in making impacts through building products that users and customers love. 
 
-And now, I'm looking for new product management opportunities in open source, blockchain, and/or data spaces. 
+Currently, I'm exploring new career opportunities in open source, blockchain, and/or data spaces. Hit me up if you're interested in working together! 
 
 #### [root /]$ What I did: 
 
@@ -24,7 +24,7 @@ And now, I'm looking for new product management opportunities in open source, bl
 #### [root /]$ What I studied:
 
 - MSc in Management (Focusing on Innovation Management, Marketing, and Economics)
-- BBA in Finance (Banking and Cooperatives)
+- BBA in Finance (Finance and Cooperatives Management)
 
 #### [root /]$ What else?
 
