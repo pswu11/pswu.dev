@@ -1,0 +1,5 @@
+content.temp/
+_projects_content/
+resources/_gen/
+.hugo_build.lock
+_drafts/x
