@@ -1,4 +1,4 @@
-baseURL = 'https://maverick.canhtran.me'
+baseURL = 'https://pswu.dev'
 languageCode = 'en-us'
 title = 'PSWU'
 paginate = 3
@@ -15,7 +15,7 @@ enableEmoji = true
   author = 'Calvin Tran'
 
   [params.comments]
-    githubRepo = 'canhtran/maverick'
+    githubRepo = 'pswu11/pswu11.github.io'
     theme = 'github-light'
 
 
