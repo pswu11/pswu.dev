@@ -1,17 +1,28 @@
-export function Project() {
+import { Link } from "react-router-dom"
+
+type Props = {
+  name: string
+  desc: string
+  img: string
+  link: string
+  tech: string[]
+}
+
+export function Project({ name, desc, img, link, tech }: Props) {
   return (
     <div className="w-full h-40 white-border-rounded overflow-hidden red-shadow-lg flex">
-    <img
-      className="h-full aspect-[3/2] object-cover"
-      src="https://images.unsplash.com/photo-1502780402662-acc01c084a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1808&q=80"
-    />
-    <div className="flex flex-col p-4">
-      <h2 className="font-semibold text-lg">Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum
-        commodi aliquam ut inventore consequatur.
-      </p>
+      <Link to={link}>
+        <img className="h-full aspect-[3/2] object-cover" src={img} />
+      </Link>
+      <div className="flex flex-col p-4 justify-between">
+        <h2 className="font-semibold text-lg">{name}</h2>
+        <p>{desc}</p>
+        <div className="flex gap-2">
+          {
+            tech.map((label, idx) => <div key={idx} className="bg-secondary-green text-base-darkpurple px-1 py-1 text-sm">{label}</div>)
+          }
+        </div>
+      </div>
     </div>
-  </div>
   )
 }

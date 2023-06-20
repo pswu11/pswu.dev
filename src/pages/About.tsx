@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Experience from "../components/experience/Experience"
 import Summary from "../components/experience/Summary"
 import Tags from "../components/experience/Tags"
@@ -81,7 +82,7 @@ const allExperiences = [
     role: "Global MBA",
     organization: "Seoul National University",
     time: "09.2016 - 12.2016",
-    summary: "",
+    summary: "Portfolios Management",
     bullets: [],
   },
   {
@@ -90,7 +91,8 @@ const allExperiences = [
     role: "Senior Financial Analyst",
     organization: "Yahoo!",
     time: "11.2011 - 12.2014",
-    summary: "",
+    summary:
+      "My responsibilities covers forecasting & reporting, revenue & cost analysis, audience metrics, PR/PO management, reorganization project management, etc.",
     bullets: [],
   },
   {
@@ -125,16 +127,22 @@ const allExperiences = [
 ]
 
 export function About() {
+  const [experences, setExperiences] = useState(allExperiences)
   return (
     <div>
       <Summary />
-      <Tags onClick={(event) => {
-        const el = event.target as HTMLElement
-        const filteredType = el.id.split("-")[0]
-        console.log(filteredType)
-      }} />
+      <Tags
+        onClick={(event) => {
+          const el = event.target as HTMLElement
+          const filteredType = el.id.split("-")[0]
+          const filteredExp = allExperiences.filter((x) =>
+            filteredType === "all" ? true : filteredType === x.type
+          )
+          setExperiences(filteredExp)
+        }}
+      />
       <div className="flex flex-col gap-4">
-        {allExperiences.map((exp, idx) => (
+        {experences.map((exp, idx) => (
           <Experience
             key={idx}
             type={exp.type}
