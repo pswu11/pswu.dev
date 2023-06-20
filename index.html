@@ -1,84 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="pswu002.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
     <title>PSWU</title>
   </head>
-  <body class="container-md">
-    <div class="wrapper">
-      <header>
-        <div class="icon-mix">
-          <a href="./index.html">
-            <img id="icon" src="./assets/pswu.svg" alt="pswu icon" />
-          </a>
-          <div id="cursor"></div>
-        </div>
-        <nav class="menu">
-          <img id="burger-menu" src="./assets/burger.svg" alt="burger-menu" />
-          <a href="./about.html">About</a>
-          <a href="./blog.html">Blog</a>
-          <a href="./projects.html">Projects</a>
-        </nav>
-      </header>
-      <main>
-        <section id="sec-greeting">
-          <h2>Hi there!</h2>
-          <p>
-            This is Pei, a Taiwanese living in Germany. I’m a Financial Analyst
-            turned into Product Manager. I enjoy creating impacts through
-            building products that users and customers love. I’m passionate
-            about software engineering, open-source software, and solving user
-            problems.
-          </p>
-          <p>
-            Currently, I’m exploring new career possibilities in open source,
-            dev tooling, and/or data analytics spaces. Hit me up if you’re
-            interested in working together!
-          </p>
-          <p style="font-weight: 700">
-            <a href="./about.html">...more about me.</a>
-          </p>
-        </section>
-        <div class="divider"></div>
-        <section id="socials">
-          <a href="https://pswu.dev"
-            ><img class="social-icon" src="./assets/info.svg" alt=""
-          /></a>
-          <a href="https://github.com/pswu11"
-            ><img class="social-icon" src="./assets/github.svg" alt=""
-          /></a>
-          <a href="https://twitter.com/pswu11"
-            ><img class="social-icon" src="./assets/twitter.svg" alt=""
-          /></a>
-          <a href="https://www.linkedin.com/in/pei-wu/"
-            ><img class="social-icon" src="./assets/linkedin.svg" alt=""
-          /></a>
-        </section>
-        <div class="divider"></div>
-        <form id="sec-contact">
-          <h2>Say hi</h2>
-          <div>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" placeholder="snoopy" />
-          </div>
-          <div>
-            <label for="email">Your email:</label>
-            <input type="email" id="email" placeholder="snoopy@example.de" />
-          </div>
-          <div>
-            <label for="message">Your message:</label>
-            <textarea id="message" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn">
-            Send
-          </button>
-        </form>
-      </main>
-      <footer>Crafted with ❤️ by Pei-Shan Wu</footer>
-    </div>
-    <script defer src="./main.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
