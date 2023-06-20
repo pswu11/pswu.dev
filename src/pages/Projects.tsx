@@ -9,7 +9,7 @@ const allProjects = [
     tech: [
       "Typescript",
       "HTML",
-      "CSS"
+      "CSS",
     ]
   },
 ]

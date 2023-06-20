@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
+
 function LogoMix() {
   return (
-    <div id="logo-mix" className="flex h-7">
-      <a id="icon-link" href="/" className="h-full">
+    <div className="flex h-7">
+      <Link to="/" className="h-full">
         <img id="icon" src="pswu.svg" alt="pswu icon" />
-      </a>
-      <div id="cursor" className="blinking-cursor h-full"></div>
+      </Link>
+      <div className="blinking-cursor h-full"></div>
     </div>
   )
 }

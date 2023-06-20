@@ -6,7 +6,7 @@ type Props = {
 
 function Wrapper({children}: Props) {
   return (
-    <div id="wrapper" className="w-[600px] min-h-screen bg-[#f6e8ea05] py-1 px-6">
+    <div id="wrapper" className="w-screen md:w-[600px] sm:w-5/6 min-h-screen bg-[#f6e8ea05] pt-1 pb-4 px-6">
       {children}
     </div>
   )

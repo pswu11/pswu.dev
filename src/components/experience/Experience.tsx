@@ -6,6 +6,7 @@ type Props = {
   type: string
   header?: string
   role: string
+  org: string
   time: string
   summary: string
   bullets: string[]
@@ -13,7 +14,7 @@ type Props = {
   alt: string
 }
 
-function Experience({ type, header, role, time, summary, bullets, icon, alt }: Props) {
+function Experience({ type, header, role, org, time, summary, bullets, icon, alt }: Props) {
   return (
     <div
       className={clsx(
@@ -26,7 +27,7 @@ function Experience({ type, header, role, time, summary, bullets, icon, alt }: P
       )}
     >
       {
-        icon ? <ExperienceHeader role={role} time={time} icon={icon} alt={alt} /> : <p className="font-semibold">{header}</p>
+        icon ? <ExperienceHeader role={role} org={org} time={time} icon={icon} alt={alt} /> : <p className="font-semibold">{header}</p>
       }
       <ExperienceDesc summary={summary} bullets={bullets} />
       <button></button>

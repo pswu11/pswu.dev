@@ -9,7 +9,7 @@
 
 @layer utilities {
   .white-border-btn {
-    @apply border-[1px] border-solid border-base-white px-4 py-1 hover:bg-base-darkpurple
+    @apply border-[1px] border-solid border-base-white px-3 sm:px-4 py-1 hover:bg-base-darkpurple
   }
 
   .white-border-rounded {

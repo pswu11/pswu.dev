@@ -147,7 +147,8 @@ export function About() {
             key={idx}
             type={exp.type}
             header={exp.header}
-            role={`${exp.role} @ ${exp.organization}`}
+            role={exp.role}
+            org={exp.organization}
             time={exp.time}
             icon={exp.icon}
             alt={exp.organization}
