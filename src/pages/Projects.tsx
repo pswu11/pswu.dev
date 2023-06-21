@@ -1,20 +1,16 @@
+import { useLoaderData } from "react-router-dom"
 import { Project } from "../components/projects/Project"
 
-const allProjects = [
-  {
-    title: "Snake!",
-    desc: "A web-base snake game. Longer and longer and longer and longer.",
-    link: "https://snake-game-zeta-coral.vercel.app/",
-    img: "projects/snake.png",
-    tech: [
-      "Typescript",
-      "HTML",
-      "CSS",
-    ]
-  },
-]
+type Proj = {
+  title: string;
+  desc: string;
+  link: string;
+  img: string;
+  tech: string[];
+}
 
 export function Projects() {
+  const allProjects = useLoaderData() as Proj[]
   return (
     <div className="flex flex-col text-white gap-4">
       {
