@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useLoaderData } from "react-router-dom"
+// import { useLoaderData } from "react-router-dom"
 import Experience from "../components/experience/Experience"
 import Summary from "../components/experience/Summary"
 import Tags from "../components/experience/Tags"
