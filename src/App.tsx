@@ -12,19 +12,18 @@ async function expLoader() {
     )
     if (!response.ok) {
       throw Error(`Error with status: ${response.status}`)
-    } else {
-      const data = await response.json()
-      return data
     }
+    const data = await response.json()
+    return data
   } catch (err) {
     // Different error handling approaches for real-world use cases:
     // 1. toastify to show a error notification
     // 2. pass a parem and listen to it on the about page, and handle it there
     // 3. redirect to an error page depending on the error
     // But for personal website, this data is most likely hosted on the same server.
+    console.log(err)
   }
 }
-
 
 const router = createBrowserRouter([
   {
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
-        loader: expLoader
+        loader: expLoader,
       },
       {
         path: "blog",
