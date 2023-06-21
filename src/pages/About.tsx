@@ -15,7 +15,7 @@ type Exp = {
   bullets: string[];
 }
 
-const allExperiences = [
+const allExperiences: Exp[] = [
   {
     "type": "study",
     "icon": "../experience/froggy.png",

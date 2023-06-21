@@ -19,10 +19,10 @@ const socialItems = [
 ]
 
 function Socials() {
-  return <section id="socials" className="flex justify-center items-center gap-4 px-6 py-4 white-border-rounded purple-shadow-lg">
+  return <section className="flex justify-center items-center gap-4 px-6 py-4 white-border-rounded purple-shadow-lg">
     {
       socialItems.map((item) => (
-        <Social link={item.link} source={item.source} alt={`${item.name} icon`}/>
+        <Social key={item.name} link={item.link} source={item.source} alt={`${item.name} icon`}/>
       ))
     }
   </section>

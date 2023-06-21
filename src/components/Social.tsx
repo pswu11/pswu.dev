@@ -6,7 +6,7 @@ type Props = {
 
 function Social({link, source, alt}: Props) {
   return (
-    <a href={link} >
+    <a href={link}>
       <img className="h-6" src={source} alt={alt} />
     </a>
   )
