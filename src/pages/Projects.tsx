@@ -5,6 +5,7 @@ type Proj = {
   title: string;
   desc: string;
   link: string;
+  code: string;
   img: string;
   tech: string[];
 }
@@ -16,7 +17,7 @@ export function Projects() {
       {
         allProjects.map((proj) => {
           return (
-            <Project key={proj.title} name={proj.title} img={proj.img} link={proj.link} desc={proj.desc} tech={proj.tech}/>
+            <Project key={proj.title} name={proj.title} img={proj.img} link={proj.link} code={proj.code} desc={proj.desc} tech={proj.tech}/>
           )
         })
       }
