@@ -32,6 +32,7 @@ async function projLoader() {
       "https://json-server-live.vercel.app/projects"
     )
     if (!response.ok) {
+      console.log(response.status)
       throw Error(`Error with status: ${response.status}`)
     }
     const data = await response.json()
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
         path: "about",
         element: <About />,
         loader: expLoader,
+        errorElement: <div>Error!</div>
       },
       {
         path: "blog",
@@ -62,7 +64,8 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Projects />,
-        loader: projLoader
+        loader: projLoader,
+        errorElement: <div>Error!</div>
       },
     ],
   },
