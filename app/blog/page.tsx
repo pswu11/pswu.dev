@@ -11,12 +11,13 @@ export default function Blog() {
     blogPosts.push({ postFrontmatter, slug: post.split(".")[0]})
   }
 
+
   return (
-    <section className="">
-      Blog
+    <section className="text-lg flex flex-col gap-4 my-8">
       {blogPosts.map((post) => (
-        <li key={post.slug}>
-          <Link href={`/blog/${post.slug}`}>{post.postFrontmatter.title}</Link>
+        <li key={post.slug} className="flex justify-between items-end">
+          <Link href={`/blog/${post.slug}`} className="hover:underline">{post.postFrontmatter.title}</Link>
+          <span className="text-base opacity-50">{new Date(post.postFrontmatter.date).toLocaleDateString("en-US")}</span>
         </li>
       ))}
     </section>
