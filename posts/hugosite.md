@@ -50,16 +50,16 @@ Pages.
 
 Overall, we will create two repositories under your GitHub account:
 
-**1. `<SITE_NAME>**<br>`**
-**2. `<GITHUB_USERNAME>.github.io`**
+1. **&lt;SITE_NAME&gt;**
+2. **&lt;GITHUB_USERNAME&gt;.github.io**
 
 ![My repositories](/images/hugosite2.png "My repositories")
 
-The repository **`<HUGO_SITE_NAME>`** is used to save the original Hugo project,
+The repository `<HUGO_SITE_NAME>` is used to save the original Hugo project,
 which is the place where you edit the articles, configure your pages, and tune
 your themes.
 
-And **`<GITHUB_USERNAME>.github.io`** is for the generated HTML content that will
+And `<GITHUB_USERNAME>.github.io` is for the generated HTML content that will
 be rendered by Hugo. It will also be a submodule of the first repository in our
 setup.
 
@@ -168,16 +168,14 @@ created:
 
 ![Your site is generated](/images/hugosite5.png "Your site is generated")
 
-Now we move to the submodule folder with the name of
-**`<GITHUB_USERNAME>.github.io`**.
+Now we move to the submodule folder with the name of **`<GITHUB_USERNAME>.github.io`**.
 
-`cd <GITHUB_USERNAME>.github.io`
-
-`git add .`
-
-`git commit -m "first commit for my generated HTML content."`
-
-`git push origin master`
+```bash
+cd <GITHUB_USERNAME>.github.io
+git add .
+git commit -m "first commit for my generated HTML content."
+git push origin master
+```
 
 Your website is now available at `https://<GITHUB_USERNAME>.github.io` this
 address.

@@ -88,14 +88,14 @@ It is recommended to also configure the fan speed etc. with your own working pre
 
 My configuration file looks like this:
 
-~~~~
+```bash
 min_fan1_speed = 1300
 max_fan1_speed = 6100
 low_temp = 60        
 high_temp = 64       
 max_temp = 80        
 polling_interval = 3 
-~~~~
+```
 
 However, you could also refer to a more detailed tutorial here at [ineed.coffee](https://ineed.coffee/3838/a-beginners-tutorial-for-mbpfan-under-ubuntu/).
 
@@ -103,7 +103,7 @@ However, you could also refer to a more detailed tutorial here at [ineed.coffee]
 
 If you have a MacBook Pro Retina or other laptops with high resolution display, you probably notice that all the texts and icons are extremely small. In this case it’s recommended to change the scaling factor here (for Manjaro KDE):
 
-_System Settings > Display and Monitor > Displays > Scale Display_
+System Settings &gt; Display and Monitor &gt; Displays &gt; Scale Display
 
 Take my own setting as an example — my display resolution is 2560x1440, and with that I use 1.4 as the scaling factor.
 
