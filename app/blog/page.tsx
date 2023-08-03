@@ -6,9 +6,9 @@ export default function Blog() {
   const postFiles = fs.readdirSync("posts")
   let blogPosts = []
   for (let post of postFiles) {
-    const postMatter = matter(fs.readFileSync(`posts/${post}`, "utf-8"))
+    const postMatter = matter(fs.readFileSync(`./posts/${post}`, "utf-8"))
     const postFrontmatter = postMatter.data
-    blogPosts.push({ postFrontmatter, slug: post.replace(".md", "") })
+    blogPosts.push({ postFrontmatter, slug: post.split(".")[0]})
   }
 
   return (
