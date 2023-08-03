@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 
 function LogoMix() {
   return (
     <div className="flex h-7">
       <Link href="/" className="h-full">
-        <img id="icon" src="pswu.svg" alt="pswu icon" />
+        <Image id="icon" src="pswu.svg" alt="pswu icon" />
       </Link>
       <div className="blinking-cursor h-full"></div>
     </div>
