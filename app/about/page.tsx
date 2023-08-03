@@ -19,7 +19,7 @@ type Exp = {
 const allExperiences: Exp[] = [
   {
     type: "study",
-    icon: "../experience/froggy.png",
+    icon: "/experience/froggy.png",
     role: "Explorer",
     organization: "Career Break",
     time: "03.2023 - now",
@@ -32,7 +32,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "work",
-    icon: "../experience/qdb.svg",
+    icon: "/experience/qdb.svg",
     role: "Product Manager",
     organization: "QuestDB",
     time: "09.2021 - 01.2023",
@@ -42,7 +42,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "work",
-    icon: "../experience/jina.svg",
+    icon: "/experience/jina.svg",
     role: "Product Manager, Developer Relations",
     organization: "Jina AI",
     time: "09.2020 - 09.2021",
@@ -52,7 +52,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "study",
-    icon: "../experience/eth.svg",
+    icon: "/experience/eth.svg",
     role: "Devcon Scholar",
     organization: "Ethereum Foundation",
     time: "02.2019 - 10.2019",
@@ -62,7 +62,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "work",
-    icon: "../experience/cloud_heat.svg",
+    icon: "/experience/cloud_heat.svg",
     role: "Business Development",
     organization: "Cloud&Heat Technologies",
     time: "08.2018 - 08.2020",
@@ -72,7 +72,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "work",
-    icon: "../experience/solvemate.svg",
+    icon: "/experience/solvemate.svg",
     role: "Product Management",
     organization: "Solvemate",
     time: "01.2017 - 03.2017",
@@ -82,7 +82,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "study",
-    icon: "../experience/hhl.svg",
+    icon: "/experience/hhl.svg",
     role: "MSc in Management",
     organization: "HHL Leipzig Graduate School of Management",
     time: "09.2015 - 11.2017",
@@ -91,7 +91,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "study",
-    icon: "../experience/snu.png",
+    icon: "/experience/snu.png",
     role: "Global MBA",
     organization: "Seoul National University",
     time: "09.2016 - 12.2016",
@@ -100,7 +100,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "work",
-    icon: "../experience/yahoo.svg",
+    icon: "/experience/yahoo.svg",
     role: "Senior Financial Analyst",
     organization: "Yahoo!",
     time: "11.2011 - 12.2014",
@@ -110,7 +110,7 @@ const allExperiences: Exp[] = [
   },
   {
     type: "study",
-    icon: "../experience/ntpu.svg",
+    icon: "/experience/ntpu.svg",
     role: "BBA",
     organization: "National Taipei University",
     time: "09.2006 - 06.2010",
