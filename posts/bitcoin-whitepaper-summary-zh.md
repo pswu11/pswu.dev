@@ -107,5 +107,5 @@ proof-of-work）。同時需要注意的是，比特幣的發行也是透過工�
 - 比特幣白皮書中文翻譯（翻譯者：AndyLin）
 - 比特幣白皮書中文翻譯及註解（翻譯者：金曉）
 
-本篇文章也同時發表在 Ｍ edium 上
-：[文章連結](https://medium.com/ethereum-foundation-devcon-scholars/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%99%BD%E7%9A%AE%E6%9B%B8-%E9%80%99%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC%E5%95%A6-8769df691e7c?source=friends_link&sk=504572478463342757813ac387dff60f)。
+本篇文章也同時發表在 Ｍedium：
+[文章連結](https://medium.com/ethereum-foundation-devcon-scholars/%E6%AF%94%E7%89%B9%E5%B9%A3%E7%99%BD%E7%9A%AE%E6%9B%B8-%E9%80%99%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E9%BA%BC%E5%95%A6-8769df691e7c?source=friends_link&sk=504572478463342757813ac387dff60f)。
