@@ -50,16 +50,16 @@ Pages.
 
 Overall, we will create two repositories under your GitHub account:
 
-1. **&lt;SITE_NAME&gt;**
-2. **&lt;GITHUB_USERNAME&gt;.github.io**
+1. **SITE_NAME**
+2. **GITHUB_USERNAME.github.io**
 
 ![My repositories](/images/hugosite2.png "My repositories")
 
-The repository `<HUGO_SITE_NAME>` is used to save the original Hugo project,
+The repository `HUGO_SITE_NAME` is used to save the original Hugo project,
 which is the place where you edit the articles, configure your pages, and tune
 your themes.
 
-And `<GITHUB_USERNAME>.github.io` is for the generated HTML content that will
+And `GITHUB_USERNAME.github.io` is for the generated HTML content that will
 be rendered by Hugo. It will also be a submodule of the first repository in our
 setup.
 
@@ -71,9 +71,7 @@ repository with this specific name above for hosting via Github Pages.
 After you have installed Hugo successfully. Go to where you would like to put
 your Hugo project and generate a Hugo project:
 
-`cd <YOUR WISHED LOCATION/FOLDER>`
-
-`hugo new site <HUGO_SITE_NAME>`
+```hugo new site HUGO_SITE_NAME```
 
 After you have create your Hugo project, Hugo will generate a structure which
 looks like below:
@@ -98,11 +96,13 @@ In this tutorial, we use meme theme.
 
 Make sure you are in your project folder:
 
-`git init`
+```bash
+git init
 
-`git submodule add https://github.com/calintat/minimal.git themes/meme`
+git submodule add https://github.com/calintat/minimal.git themes/meme
 
-`cp themes/meme/exampleSite/config.toml .`
+cp themes/meme/exampleSite/config.toml .
+```
 
 Until now, we are almost done, but we need to do a bit of configuration.
 
@@ -125,7 +125,7 @@ smoothly as we imagine.
 
 Run this in the terminal:
 
-`hugo server`
+```hugo server```
 
 ![Hosting on your machine](/images/hugosite4.png "Hosting on your machine")
 
@@ -146,38 +146,45 @@ Now, we need to make sure it also works on GitHub Pages.
 If you remember we have created two repositories, it's time to connect to them.
 First, make sure you are still in the project folder.
 
-`git init`
+```bash
+git init
 
-`git remote add origin git@github.com:<GITHUB_USERNAME>/<SITE_NAME>.git`
+git remote add origin git@github.com: GITHUB_USERNAME/SITE_NAME.git
 
-`git add .`
+git add .
 
-`git commit -m "first commit for my hugo website."`
+git commit -m "first commit for my hugo website."
+```
 
 Then we add submodule, which will be the folder for our generated HTML:
 
-`git submodule add git@github.com:<GITHUB_USERNAME>/<GITHUB_USERNAME>.github.io.git`
+```bash
+git submodule add git@github.com:GITHUB_USERNAME/GITHUB_USERNAME.github.io.git
+```
 
 Finally, we have added our origins to git repositories. And we need to rendered
 our static website and push it to our second GitHub repository.
 
-`hugo`
+```hugo```
 
 This command will generate your website content to the submodule folder we just
 created:
 
 ![Your site is generated](/images/hugosite5.png "Your site is generated")
 
-Now we move to the submodule folder with the name of **`<GITHUB_USERNAME>.github.io`**.
+Now we navigate to the submodule folder:
 
 ```bash
-cd <GITHUB_USERNAME>.github.io
+cd GITHUB_USERNAME.github.io
+
 git add .
+
 git commit -m "first commit for my generated HTML content."
+
 git push origin master
 ```
 
-Your website is now available at `https://<GITHUB_USERNAME>.github.io` this
+Your website is now available at `https://GITHUB_USERNAME.github.io` this
 address.
 
 Check it out in your browser!
