@@ -32,7 +32,7 @@ For Arch Linux based distros, pacman is the package manager that is used for ins
 
 So, open the terminal and run this to update your system.
 
-`sudo pacman -Syyu`
+```sudo pacman -Syyu```
 
 Then we are good to go to our next steps.
 
@@ -44,7 +44,9 @@ First, please install pamac, another GUI for the existing package manager. The o
 
 Through pamac you can enable AUR as package repository.
 
-`sudo pacman -S pamac`
+```bash
+sudo pacman -S pamac
+```
 
 Run pamac. Search for the application with name Add/Remove Software, and you will find it.
 
@@ -60,13 +62,16 @@ You probably notice that the fan is not working probably. Here is how we can mak
 
 First, there are some modules to be created for the fan speed and the temperature sensors:
 
-`sudo nano /etc/modules`
+```bash
+sudo nano /etc/modules
+```
 
 Insert these two lines to add the modules.
 
-`coretemp`
-
-`applesmc`
+```bash
+coretemp
+applesmc
+```
 
 Save it.
 
@@ -74,17 +79,20 @@ Then we need to install mbpfan-git through our pamac.
 
 After that, make the sensors detectable.
 
-`sudo sensors-detect`
+```bash
+sudo sensors-detect
 
-`Start the fan.`
+# Start the fan:
 
-`sudo systemctl enable mbpfan`
-
-`sudo systemctl start mbpfan`
+sudo systemctl enable mbpfan
+sudo systemctl start mbpfan
+```
 
 It is recommended to also configure the fan speed etc. with your own working preference.
 
-`sudo nano /etc/mbpfan.conf`
+```bash
+sudo nano /etc/mbpfan.conf
+```
 
 My configuration file looks like this:
 
@@ -103,7 +111,7 @@ However, you could also refer to a more detailed tutorial here at [ineed.coffee]
 
 If you have a MacBook Pro Retina or other laptops with high resolution display, you probably notice that all the texts and icons are extremely small. In this case it’s recommended to change the scaling factor here (for Manjaro KDE):
 
-System Settings &gt; Display and Monitor &gt; Displays &gt; Scale Display
+_System Settings &gt; Display and Monitor &gt; Displays &gt; Scale Display_
 
 Take my own setting as an example — my display resolution is 2560x1440, and with that I use 1.4 as the scaling factor.
 
@@ -115,13 +123,16 @@ I found a solution in [Phil Plückthun’s article](https://medium.com/@philpl/a
 
 Open the terminal and type this:
 
-`sudo nano /etc/systemd/logind.conf`
+```bash
+sudo nano /etc/systemd/logind.conf
+```
 
 Then, add these two lines below in the configuration and save it.
 
-`HandlePowerKey=suspend`
-
-`HandleLidSwitch=suspend`
+```bash
+HandlePowerKey=suspend
+HandleLidSwitch=suspend
+```
 
 #### Make your front camera work (optional).
 

@@ -71,7 +71,9 @@ repository with this specific name above for hosting via Github Pages.
 After you have installed Hugo successfully. Go to where you would like to put
 your Hugo project and generate a Hugo project:
 
-```hugo new site HUGO_SITE_NAME```
+```bash
+hugo new site HUGO_SITE_NAME
+```
 
 After you have create your Hugo project, Hugo will generate a structure which
 looks like below:
@@ -125,7 +127,9 @@ smoothly as we imagine.
 
 Run this in the terminal:
 
-```hugo server```
+```bash
+hugo server
+```
 
 ![Hosting on your machine](/images/hugosite4.png "Hosting on your machine")
 
@@ -165,7 +169,9 @@ git submodule add git@github.com:GITHUB_USERNAME/GITHUB_USERNAME.github.io.git
 Finally, we have added our origins to git repositories. And we need to rendered
 our static website and push it to our second GitHub repository.
 
-```hugo```
+```bash
+hugo
+```
 
 This command will generate your website content to the submodule folder we just
 created:
@@ -197,7 +203,7 @@ Wait, it's still not finished.
 
 We need to make this website look like YOUR personal website.
 
-What should you do?
+What could you do?
 
 - Go trough config.toml and configure your website the way you want
 - Create content such as About Me or blog posts using Markdown format (.md)
