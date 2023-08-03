@@ -7,9 +7,9 @@ export default function Page({ params }: { params: { slug: string } }) {
   const markdown = fs.readFileSync(`posts/${fileName}`, "utf-8")
   const { data: frontMatter, content } = matter(markdown)
   return (
-    <div>
-      <h2 className="text-xl leading-8 font-semibold">{frontMatter.title}</h2>
+    <article className="prose lg:prose-xl prose-invert prose-h2:text-2xl prose-h2:font-bold">
+      <h2>{frontMatter.title}</h2>
       <MDXRemote source={content} />
-    </div>
+    </article>
   )
 }
