@@ -9,7 +9,7 @@ function Summary() {
       <ProfilePic />
       <div id="summary-text" className="flex flex-col gap-4">
         <p>
-          Hi, I'm <span>Pei</span>. I'm a financial analyst, product manager,
+          Hi, I&apos;m <span>Pei</span>. I'm a financial analyst, product manager,
           and advocate for open source software. My passion for open source and
           dev tools movimated me to start learning programming. 
         </p>

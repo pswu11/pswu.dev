@@ -16,7 +16,7 @@ export default function Blog() {
       Blog
       {blogPosts.map((post) => (
         <li>
-          <Link href={`/blog/${post.slug}`}>{post.postFrontmatter.title}</Link>
+          <Link key={post.slug} href={`/blog/${post.slug}`}>{post.postFrontmatter.title}</Link>
         </li>
       ))}
     </section>
