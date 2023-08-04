@@ -29,7 +29,7 @@ type Props = {
 
 function Tags({onClick}: Props) {
   return (
-    <div className="flex gap-2 my-4 flex-wrap">
+    <div className="flex gap-2 my-4 flex-wrap justify-center">
 
       {
         allTags.map((tag) => <Tag key={tag.id} id={tag.id} className={tag.className} text={tag.name} onClick={onClick}/>)
