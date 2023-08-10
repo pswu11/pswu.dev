@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Tag } from "../about/Tag"
+import { Tag } from "@/components/Tag"
 
 type Props = {
   name: string

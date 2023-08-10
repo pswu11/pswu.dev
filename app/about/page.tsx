@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import Experience from "./Experience"
-import Summary from "./Summary"
-import Tags from "./Tags"
+import Experience from "@/components/Experience"
+import Tags from "@/components/Tags"
+import Summary from "@/components/Summary"
 
 type Exp = {
   type: string
