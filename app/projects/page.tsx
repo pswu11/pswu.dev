@@ -18,6 +18,14 @@ const allProjects: Proj[] = [
     img: "projects/snake.png",
     tech: ["Typescript", "HTML", "CSS"],
   },
+  {
+    title: "Frog Routes",
+    desc: "A mock JSON server that returns a list of routes for prototype.",
+    link: "https://frog-routes.vercel.app/",
+    code: "https://github.com/frog-routes",
+    img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
+    tech: ["Typescript", "Express", "Prisma", "PostgreSQL"],
+  },
 ]
 
 export default function Projects() {
