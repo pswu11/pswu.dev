@@ -7,6 +7,7 @@ type Proj = {
   code: string
   img: string
   tech: string[]
+  yearMonth: string
 }
 
 const allProjects: Proj[] = [
@@ -17,14 +18,34 @@ const allProjects: Proj[] = [
     code: "https://github.com/pswu11",
     img: "projects/snake.png",
     tech: ["Typescript", "HTML", "CSS"],
+    yearMonth: "2023-05",
   },
   {
     title: "Frog Routes",
-    desc: "A mock JSON server that returns a list of routes for prototype.",
+    desc: "A library with cli tooling for mocking HTTP requests",
     link: "https://frog-routes.vercel.app/",
-    code: "https://github.com/frog-routes",
+    code: "https://github.com/pswu11/frog-routes",
     img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
     tech: ["Typescript", "Express", "Prisma", "PostgreSQL"],
+    yearMonth: "2023-08",
+  },
+  {
+    title: "Movie App",
+    desc: "A web-based movie app using OMDb API. A team project.",
+    link: "https://frog-routes.vercel.app/",
+    code: "https://github.com/frog-routes",
+    img: "projects/snake.png",
+    tech: ["React", "Typescript", "Express", "Prisma", "PostgreSQL"],
+    yearMonth: "2023-07",
+  },
+  {
+    title: "Tic Tac Toe",
+    desc: "A command line interface tic tac toe game.",
+    link: "https://frog-routes.vercel.app/",
+    code: "https://github.com/pswu11/tictactoe",
+    img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
+    tech: ["Golang"],
+    yearMonth: "2021",
   },
 ]
 
