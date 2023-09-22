@@ -14,7 +14,7 @@ const allProjects: Proj[] = [
   {
     title: "empleo",
     desc: "A app for job seekers to organize and track their job applications. A fork of team final project at Devhaus.",
-    link: "https://github.com/pswu11/emple",
+    link: "https://github.com/pswu11/empleo",
     code: "https://github.com/pswu11/empleo",
     img: "projects/empleo.png",
     tech: ["Typescript", "Next.js", "Express", "Prisma", "PostgreSQL", "Clerk"],
