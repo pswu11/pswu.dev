@@ -71,6 +71,15 @@ const allExperiences: Exp[] = [
     bullets: [],
   },
   {
+    type: "study",
+    icon: "/experience/hhl.svg",
+    role: "MSc in Management",
+    organization: "HHL Leipzig Graduate School of Management",
+    time: "09.2015 - 11.2017",
+    summary: "",
+    bullets: ["Innovation Management", "Economics & Regulation", "Marketing"],
+  },
+  {
     type: "work",
     icon: "/experience/solvemate.svg",
     role: "Product Management Intern",
@@ -79,15 +88,6 @@ const allExperiences: Exp[] = [
     summary:
       "Solvemate is a ML-powered chatbot that helps companies to automate customer support.",
     bullets: [],
-  },
-  {
-    type: "study",
-    icon: "/experience/hhl.svg",
-    role: "MSc in Management",
-    organization: "HHL Leipzig Graduate School of Management",
-    time: "09.2015 - 11.2017",
-    summary: "",
-    bullets: ["Innovation Management", "Economics & Regulation", "Marketing"],
   },
   {
     type: "study",
