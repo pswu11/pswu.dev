@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="experience/froggy.png" sizes="any" />
+      </head>
       <body className={`${inter.className} gradient-purple text-base-white`}>
         <div
           id="wrapper"
