@@ -11,7 +11,7 @@ function Summary() {
         <p>
           Hi, this is <span>Pei</span>. I am a financial analyst, product manager,
           and advocate for open source software. My passion for open source and
-          dev tools movimated me to start learning programming. 
+          dev tools motivated me to start learning programming. 
         </p>
         <div className="justify-end self-end">📍 Germany</div>
       </div>
