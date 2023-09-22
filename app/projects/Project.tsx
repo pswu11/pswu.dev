@@ -22,9 +22,10 @@ export function Project({ name, desc, img, link, code, tech }: Props) {
         <div className="flex gap-2 flex-wrap mt-2 mr-[20px]">
           {tech.map((label, idx) => (
             <Tag
+              variant="label"
               text={label}
               key={idx}
-              className="bg-secondary-green text-base-darkpurple px-[6px] py-[2px] text-sm"
+              className="bg-secondary-green text-base-darkpurple"
             />
           ))}
         </div>
