@@ -5,6 +5,7 @@ import Experience from "@/components/Experience"
 import Tags from "@/components/Tags"
 import Summary from "@/components/Summary"
 
+
 type Exp = {
   type: string
   header?: string
@@ -20,13 +21,13 @@ const allExperiences: Exp[] = [
   {
     type: "study",
     icon: "/experience/froggy.png",
-    role: "Aspiring Software Developer",
+    role: "Builder",
     organization: "Career Break",
     time: "03.2023 - now",
     summary: "",
     bullets: [
-      "Building full-stack web applications",
-      "Havard CS50: Introduction to Computer Science",
+      "Built full-stack web applications at a full-time coding bootcamp",
+      "Others stuff in life",
     ],
   },
   {
@@ -49,16 +50,16 @@ const allExperiences: Exp[] = [
       "Jina AI is an open source software company that provides MLOps platform for multimodal AI, neural search and generative AI.",
     bullets: [],
   },
-  {
-    type: "study",
-    icon: "/experience/eth.svg",
-    role: "Devcon Scholar",
-    organization: "Ethereum Foundation",
-    time: "02.2019 - 10.2019",
-    summary:
-      "Selected as a Devcon V Scholar amongst 50 other candidates from around the world to participate in the Ethereum Foundation’s blockchain and cryptocurrency programming.",
-    bullets: [],
-  },
+  // {
+  //   type: "study",
+  //   icon: "/experience/eth.svg",
+  //   role: "Devcon Scholar",
+  //   organization: "Ethereum Foundation",
+  //   time: "02.2019 - 10.2019",
+  //   summary:
+  //     "Selected as a Devcon V Scholar amongst 50 other candidates from around the world to participate in the Ethereum Foundation’s blockchain and cryptocurrency programming.",
+  //   bullets: [],
+  // },
   {
     type: "work",
     icon: "/experience/cloud_heat.svg",
@@ -72,7 +73,7 @@ const allExperiences: Exp[] = [
   {
     type: "work",
     icon: "/experience/solvemate.svg",
-    role: "Product Management",
+    role: "Product Management Intern",
     organization: "Solvemate",
     time: "01.2017 - 03.2017",
     summary:
@@ -86,7 +87,7 @@ const allExperiences: Exp[] = [
     organization: "HHL Leipzig Graduate School of Management",
     time: "09.2015 - 11.2017",
     summary: "",
-    bullets: ["Marketing", "Innovation Management", "Economics & Regulation"],
+    bullets: ["Innovation Management", "Economics & Regulation", "Marketing"],
   },
   {
     type: "study",
@@ -94,7 +95,7 @@ const allExperiences: Exp[] = [
     role: "Global MBA",
     organization: "Seoul National University",
     time: "09.2016 - 12.2016",
-    summary: "Portfolios Management",
+    summary: "Semester abroad",
     bullets: [],
   },
   {
@@ -125,15 +126,16 @@ const allExperiences: Exp[] = [
     time: "",
     summary: "",
     bullets: [
-      "HTML / CSS",
-      "TypeScript / JavaScript",
+      "JavaScript / TypeScript",
       "React",
       "Next.js",
       "Tailwind CSS",
       "Node.js",
       "Express",
+      "Prisma",
+      "HTML / CSS",
       "QuestDB",
-      "PostgreSQL",
+      "Linux",
       "Git",
     ],
   },
@@ -154,16 +156,19 @@ function About() {
   return (
     <section>
       <Summary />
-      <Tags
-        onClick={(event) => {
-          const el = event.target as HTMLElement
-          const filteredType = el.id.split("-")[0]
-          const filteredExp = allExperiences.filter((x) =>
-            filteredType === "all" ? true : filteredType === x.type
-          )
-          setExperiences(filteredExp)
-        }}
-      />
+
+
+        <Tags
+          onClick={(event) => {
+            const el = event.target as HTMLElement
+            const filteredType = el.id.split("-")[0]
+            const filteredExp = allExperiences.filter((x) =>
+              filteredType === "all" ? true : filteredType === x.type
+            )
+            setExperiences(filteredExp)
+          }}
+        />
+
       <div className="flex flex-col gap-4">
         {experiences.map((exp, idx) => (
           <Experience
