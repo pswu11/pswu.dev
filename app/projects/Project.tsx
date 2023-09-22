@@ -18,13 +18,13 @@ export function Project({ name, desc, img, link, code, tech }: Props) {
       </Link>
       <div className="flex flex-col p-4 justify-between">
         <h2 className="font-semibold text-lg">{name}</h2>
-        <p>{desc}</p>
+        <p className="line-clamp-2">{desc}</p>
         <div className="flex gap-2 flex-wrap mt-2 mr-[20px]">
           {tech.map((label, idx) => (
             <Tag
               text={label}
               key={idx}
-              className="bg-secondary-green text-base-darkpurple py-[2px] px-2 text-sm"
+              className="bg-secondary-green text-base-darkpurple px-[6px] py-[2px] text-sm"
             />
           ))}
         </div>

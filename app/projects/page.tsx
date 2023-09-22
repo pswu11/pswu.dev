@@ -12,13 +12,13 @@ type Proj = {
 
 const allProjects: Proj[] = [
   {
-    title: "Snake!",
-    desc: "A web-base snake game. Longer and longer and longer and longer.",
-    link: "https://snake-game-zeta-coral.vercel.app/",
-    code: "https://github.com/pswu11",
+    title: "empleo",
+    desc: "A app for job seekers to organize and track their job applications. A fork of team final project at Devhaus.",
+    link: "https://frog-routes.vercel.app/",
+    code: "https://github.com/pswu11/empleo",
     img: "projects/snake.png",
-    tech: ["Typescript", "HTML", "CSS"],
-    yearMonth: "2023-05",
+    tech: ["Typescript", "Next.js", "Express", "Prisma", "PostgreSQL"],
+    yearMonth: "2023-09",
   },
   {
     title: "Frog Routes",
@@ -30,22 +30,13 @@ const allProjects: Proj[] = [
     yearMonth: "2023-08",
   },
   {
-    title: "Movie App",
-    desc: "A web-based movie app using OMDb API. A team project.",
-    link: "https://frog-routes.vercel.app/",
-    code: "https://github.com/frog-routes",
+    title: "Snake!",
+    desc: "A web-base snake game. Longer and longer and longer and longer.",
+    link: "https://snake-game-zeta-coral.vercel.app/",
+    code: "https://github.com/pswu11",
     img: "projects/snake.png",
-    tech: ["React", "Typescript", "Express", "Prisma", "PostgreSQL"],
-    yearMonth: "2023-07",
-  },
-  {
-    title: "Tic Tac Toe",
-    desc: "A command line interface tic tac toe game.",
-    link: "https://frog-routes.vercel.app/",
-    code: "https://github.com/pswu11/tictactoe",
-    img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
-    tech: ["Golang"],
-    yearMonth: "2021",
+    tech: ["Typescript", "HTML", "CSS"],
+    yearMonth: "2023-05",
   },
 ]
 
