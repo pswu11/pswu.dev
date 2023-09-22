@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Tag } from "@/components/Tag"
+import { FaGithubAlt } from "react-icons/fa"
 
 type Props = {
   name: string
@@ -31,10 +32,7 @@ export function Project({ name, desc, img, link, code, tech }: Props) {
         </div>
       </div>
       <Link href={code}>
-        <img
-          src="github.svg"
-          className="absolute bottom-2 right-2 rounded-full w-6 h-6"
-        ></img>
+        <FaGithubAlt className="absolute bottom-2 right-2 rounded-full w-6 h-6" />
       </Link>
     </div>
   )
