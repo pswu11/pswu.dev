@@ -6,12 +6,12 @@ const navItems = [
     link: "/about"
   },
   {
-    title: "Blog",
-    link: "/blog"
-  },
-  {
     title: "Projects",
     link: "/projects"
+  },
+  {
+    title: "Blog",
+    link: "/blog"
   }
 ]
 
