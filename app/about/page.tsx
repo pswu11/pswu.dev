@@ -76,7 +76,7 @@ const allExperiences: Exp[] = [
     organization: "Solvemate",
     time: "01.2017 - 03.2017",
     summary:
-      "Cloud&Heat provides managed Kubernetes, managed OpenStack, and sustainable datacenter solutions.",
+      "Solvemate is a ML-powered chatbot that helps companies to automate customer support.",
     bullets: [],
   },
   {
