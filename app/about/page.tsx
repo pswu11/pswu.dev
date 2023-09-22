@@ -27,7 +27,7 @@ const allExperiences: Exp[] = [
     summary: "",
     bullets: [
       "Built full-stack web applications at a full-time coding bootcamp",
-      "Others stuff in life",
+      "Other stuff in life",
     ],
   },
   {
