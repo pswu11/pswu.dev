@@ -13,7 +13,7 @@ type Proj = {
 const allProjects: Proj[] = [
   {
     title: "empleo",
-    desc: "An app for job seekers to organize and track their job applications. A fork of team final project at Devhaus.",
+    desc: "An app for job seekers to organize and track their job applications. A team project at coding bootcamp.",
     link: "https://github.com/pswu11/empleo",
     code: "https://github.com/pswu11/empleo",
     img: "projects/empleo.png",
@@ -22,7 +22,7 @@ const allProjects: Proj[] = [
   },
   {
     title: "frog routes",
-    desc: "A work-in-progress personal project for mocking HTTP requests",
+    desc: "A work-in-progress side project for mocking HTTP requests",
     link: "https://github.com/pswu11/frog-routes",
     code: "https://github.com/pswu11/frog-routes",
     img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
