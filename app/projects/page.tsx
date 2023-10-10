@@ -12,22 +12,31 @@ type Proj = {
 
 const allProjects: Proj[] = [
   {
-    title: "empleo",
-    desc: "An app for job seekers to organize and track their job applications. A team project at coding bootcamp.",
-    link: "https://github.com/pswu11/empleo",
-    code: "https://github.com/pswu11/empleo",
-    img: "projects/empleo.png",
-    tech: ["Typescript", "Next.js", "Express", "Prisma", "PostgreSQL", "Clerk"],
-    yearMonth: "2023-09",
-  },
-  {
     title: "frog routes",
     desc: "A work-in-progress side project for mocking HTTP requests",
     link: "https://github.com/pswu11/frog-routes",
     code: "https://github.com/pswu11/frog-routes",
     img: "https://github.com/pswu11/frog-routes-cli/raw/main/banner.png",
     tech: ["Typescript", "Express", "Prisma", "Jest", "Fly.io"],
-    yearMonth: "2023-08",
+    yearMonth: "2023-10",
+  },
+  {
+    title: "pswu.dev (this site)",
+    desc: "My personal website built with Next.js as an exercise.",
+    link: "https://pswu.dev",
+    code: "https://github.com/pswu11/pswu.dev",
+    img: "projects/website.png",
+    tech: ["Typescript", "Next.js", "TailwindCSS"],
+    yearMonth: "2023-09",
+  },
+  {
+    title: "empleo",
+    desc: "Final team project at the bootcamp. An app for job seekers to organize and track their job applications. ",
+    link: "https://github.com/pswu11/empleo",
+    code: "https://github.com/pswu11/empleo",
+    img: "projects/empleo.png",
+    tech: ["Typescript", "Next.js", "Express", "Prisma", "PostgreSQL", "Clerk", "TailwindCSS"],
+    yearMonth: "2023-09",
   },
   {
     title: "Snake!",
