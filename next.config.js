@@ -2,7 +2,7 @@
 const nextConfig = {
   experimental: {
     mdxRs: true,
-  },
+  }
 }
 
 const withMDX = require("@next/mdx")({

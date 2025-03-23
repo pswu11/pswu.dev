@@ -22,7 +22,7 @@ const allExperiences: Exp[] = [
     icon: "/experience/rs.png",
     role: "Product Manager",
     organization: "Raisin",
-    time: "01.2024 -",
+    time: "01.2024 - current",
     summary:
       "Raisin is a B2B2C platform for banks to offer deposit products to consumers",
     bullets: [
