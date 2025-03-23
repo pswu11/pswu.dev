@@ -36,6 +36,12 @@
     box-shadow: 2px 2.4px 0px 0px #ff81a1;
   }
 
+  .active {
+    background-color: #1b1724;
+    color: #f6e8ea;
+    box-shadow: 2px 2.4px 0px 0px #f6e8ea;;
+  }
+
   .gradient-purple {
     background: radial-gradient(
       103.52% 152.57% at 95.28% 97.27%,
