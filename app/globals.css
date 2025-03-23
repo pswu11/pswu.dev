@@ -36,6 +36,7 @@
     box-shadow: 2px 2.4px 0px 0px #ff81a1;
   }
 
+  /* For active experience tag */
   .active {
     background-color: #1b1724;
     color: #f6e8ea;

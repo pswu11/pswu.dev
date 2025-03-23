@@ -9,9 +9,9 @@ function Summary() {
       <ProfilePic />
       <div id="summary-text" className="flex flex-col gap-4">
         <p>
-          Hi, this is <span>Pei</span>. I am a financial analyst, product manager,
-          and advocate for open source software. My passion for open source and
-          dev tools motivated me to start learning programming. 
+          Hi, this is <span>Pei</span>. I am a financial analyst turned into
+          product manager. I am fascinated by open source software and
+          data analytics, which inspired me to learn programming.
         </p>
         <div className="justify-end self-end">📍 Germany</div>
       </div>

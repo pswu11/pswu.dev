@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 type Props = {
   variant?: "category" | "label"
   isActive?: boolean
@@ -31,6 +29,7 @@ export function Tag({
       className={`${className} ${variantStyles[variant]} ${isActive === true ? "active" : ""} text-base-darkpurple rounded-sm shadow-sm`}
       {...props}
     >
+      {isActive && <span>{"> "}</span>}
       {text}
     </div>
   )

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Tag } from "./Tag"
-import { FaHandPointRight } from "react-icons/fa"
 
 const allTags = [
   {
@@ -31,7 +30,7 @@ type Props = {
 
 function Tags({ onClick }: Props) {
 
-  const [activeTag, setActiveTag] = useState<string | null>("all-label"); // Track active tag ID
+  const [activeTag, setActiveTag] = useState<string | null>("all-label"); // Default filter is "All"
 
   const handleTagClick = (id: string, event: React.MouseEvent<HTMLDivElement>) => {
     setActiveTag(id); // Set the clicked tag as active
@@ -40,7 +39,6 @@ function Tags({ onClick }: Props) {
 
   return (
     <div className="flex gap-2 my-4 flex-wrap justify-center items-center">
-      {/* <FaHandPointRight size={24} /> */}
 
       {allTags.map((tag) => (
         <Tag
