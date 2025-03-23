@@ -7,11 +7,6 @@ const socialItems = [
     source: "github.svg",
   },
   {
-    name: "Twitter",
-    link: "https://twitter.com/pswu11",
-    source: "twitter.svg",
-  },
-  {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/pei-wu/",
     source: "linkedin.svg",
