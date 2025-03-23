@@ -12,13 +12,14 @@ specific staking providers. If you find any information unclear/incorrect, just
 let me know as I'm also learning. 🙏_
 
 We talked about staking during the recent [SheFi](https://www.shefi.org/)
-session. And I noticed it is among the most confusing topics for many others,
-including myself. It's not hard to grasp the concept of why staking is necessary
-for security and decentralization, and why it might be an interesting way to
-invest. But with all the staking options out there, what are the differences?
-While learning about this, I created a mental map to clarify my thoughts. I'd
-like to share this mental map and my train of thought in this blog post, and
-hopefully it's helpful for others who are also learning the same topic.
+session. And I noticed it is among the most confusing topics for many other
+SheFi memebers, including myself. It's not hard to grasp the concept of why
+staking is necessary for security and decentralization, and why it might be an
+interesting way to invest. But with all the staking options out there, what are
+the differences? While learning about this, I created a mental map to organize
+my thoughts. I'd like to share this mental map and my train of thoughts in this
+blog post, and hopefully it's helpful for others who are also learning the same
+topic.
 
 I use a tree graph to highlight relevant traits and requirements of different
 staking options from the perspective of stakers:

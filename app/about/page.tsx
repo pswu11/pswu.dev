@@ -5,7 +5,6 @@ import Experience from "@/components/Experience"
 import Tags from "@/components/Tags"
 import Summary from "@/components/Summary"
 
-
 type Exp = {
   type: string
   header?: string
@@ -19,11 +18,23 @@ type Exp = {
 
 const allExperiences: Exp[] = [
   {
+    type: "work",
+    icon: "/experience/rs.png",
+    role: "Product Manager",
+    organization: "Raisin",
+    time: "01.2024 -",
+    summary:
+      "Raisin is a B2B2C platform for banks to offer deposit products to consumers",
+    bullets: [
+      "Owning communication protocols and reporting pipelines for deposit taking banks",
+    ],
+  },
+  {
     type: "study",
     icon: "/experience/froggy.png",
     role: "Builder",
     organization: "Career Break",
-    time: "03.2023 - now",
+    time: "2023",
     summary: "",
     bullets: [
       "Built full-stack web applications at a full-time coding bootcamp",
@@ -129,14 +140,14 @@ const allExperiences: Exp[] = [
       "JavaScript / TypeScript",
       "React",
       "Next.js",
+      "SQL",
+      "Git",
       "Tailwind CSS",
       "Node.js",
       "Express",
       "Prisma",
       "HTML / CSS",
       "QuestDB",
-      "Linux",
-      "Git",
     ],
   },
   {
@@ -147,7 +158,7 @@ const allExperiences: Exp[] = [
     organization: "",
     time: "",
     summary: "",
-    bullets: ["Figma", "Productboard", "GitHub", "Shortcut", "Jira"],
+    bullets: ["GitHub", "Looker", "Posthog", "Figma", "Productboard", "Jira"],
   },
 ]
 
@@ -157,17 +168,16 @@ function About() {
     <section>
       <Summary />
 
-
-        <Tags
-          onClick={(event) => {
-            const el = event.target as HTMLElement
-            const filteredType = el.id.split("-")[0]
-            const filteredExp = allExperiences.filter((x) =>
-              filteredType === "all" ? true : filteredType === x.type
-            )
-            setExperiences(filteredExp)
-          }}
-        />
+      <Tags
+        onClick={(event) => {
+          const el = event.target as HTMLElement
+          const filteredType = el.id.split("-")[0]
+          const filteredExp = allExperiences.filter((x) =>
+            filteredType === "all" ? true : filteredType === x.type
+          )
+          setExperiences(filteredExp)
+        }}
+      />
 
       <div className="flex flex-col gap-4">
         {experiences.map((exp, idx) => (

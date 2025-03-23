@@ -34,3 +34,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 node_modules
+
+
+# build stuff
+.hugo_build.lock
+_drafts/
+pswu11.github.io/
+resources/
+themes/
