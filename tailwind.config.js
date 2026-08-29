@@ -30,7 +30,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography", "@tailwindcss/line-clamp"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 }
